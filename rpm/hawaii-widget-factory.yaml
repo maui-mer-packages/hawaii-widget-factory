@@ -25,3 +25,4 @@ PkgBR:
 
 Files:  
     - "%{_bindir}/widget-factory"
+    - "%{_bindir}/qml-widget-factory"

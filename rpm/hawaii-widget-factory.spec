@@ -9,7 +9,7 @@ Name:       hawaii-widget-factory
 # << macros
 
 Summary:    Widget styles showcase
-Version:    0.2.0.1.20140101.191d077
+Version:    0.1.90.20140323.6f52fd0
 Release:    1
 Group:      Applications/System
 License:    BSD
@@ -58,5 +58,6 @@ cd upstream
 %files
 %defattr(-,root,root,-)
 %{_bindir}/widget-factory
+%{_bindir}/qml-widget-factory
 # >> files
 # << files
