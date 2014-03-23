@@ -1,0 +1,27 @@
+Name       : hawaii-widget-factory
+Version    : 0.1.90.20140323.6f52fd0
+Release    : 1
+Group      : Applications/System
+License    : BSD
+URL        : https://github.com/mauios/hawaii-widget-factory.git
+Summary    : Widget styles showcase
+Description: Showcase tool for testing new Qt and QtQuick Controls styles.
+Sources    : 
+    - hawaii-widget-factory-%{version}.tar.xz
+
+Configure  : cmake 
+ConfigOptions: 
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo 
+    - -DCMAKE_INSTALL_PREFIX=/usr
+
+PkgConfigBR:
+    - Qt5Core
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Quick
+
+PkgBR:
+    - cmake
+
+Files:  
+    - "%{_bindir}/widget-factory"
